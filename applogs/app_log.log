@@ -1,0 +1,854 @@
+[ERROR] 2018-05-25 14:03:12.624 [http-nio-8080-exec-1] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.demo.controller.ItemController.update(ItemController.java:58) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:888) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:664) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+[INFO ] 2018-05-25 14:09:13.556 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 78691 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-05-25 14:09:13.560 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-05-25 14:09:13.643 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8edcc5: startup date [Fri May 25 14:09:13 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:09:14.534 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$303c68be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-05-25 14:09:14.745 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-05-25 14:09:14.755 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:09:14.762 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-05-25 14:09:14.763 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-05-25 14:09:14.766 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-05-25 14:09:14.848 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-05-25 14:09:14.848 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1208 ms
+[INFO ] 2018-05-25 14:09:14.999 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-05-25 14:09:15.000 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-05-25 14:09:15.003 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-05-25 14:09:15.003 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-05-25 14:09:15.003 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-05-25 14:09:15.004 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-05-25 14:09:15.146 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-05-25 14:09:15.287 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-05-25 14:09:15.325 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:09:15.382 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-05-25 14:09:15.383 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-05-25 14:09:15.411 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-05-25 14:09:15.490 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-05-25 14:09:15.874 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5807efad'
+[INFO ] 2018-05-25 14:09:15.877 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:09:16.146 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO ] 2018-05-25 14:09:16.276 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:09:16.511 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8edcc5: startup date [Fri May 25 14:09:13 PDT 2018]; root of context hierarchy
+[WARN ] 2018-05-25 14:09:16.541 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-05-25 14:09:16.576 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-05-25 14:09:16.578 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-05-25 14:09:16.578 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-05-25 14:09:16.578 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-05-25 14:09:16.579 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-05-25 14:09:16.582 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:09:16.582 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-05-25 14:09:16.614 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:09:16.615 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:09:16.928 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-05-25 14:09:16.930 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-05-25 14:09:16.935 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-05-25 14:09:17.002 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:09:17.018 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-05-25 14:09:17.028 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-05-25 14:09:17.031 [main] DemoApplication - Started DemoApplication in 3.886 seconds (JVM running for 4.642)
+[INFO ] 2018-05-25 14:09:24.464 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-05-25 14:09:24.464 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-05-25 14:09:24.482 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[INFO ] 2018-05-25 14:09:24.568 [http-nio-8080-exec-1] DemoApplication - Create Received ItemItem{name='item1', details='This is item1'}
+[INFO ] 2018-05-25 14:10:05.570 [http-nio-8080-exec-3] DemoApplication - Update Received data{
+	"id": 2,
+	"details": "This is item2 updated"
+}
+[ERROR] 2018-05-25 14:10:05.582 [http-nio-8080-exec-3] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.demo.controller.ItemController.update(ItemController.java:66) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:888) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:664) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+[INFO ] 2018-05-25 14:10:32.285 [Thread-12] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8edcc5: startup date [Fri May 25 14:09:13 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:10:32.287 [Thread-12] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-05-25 14:10:32.288 [Thread-12] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-05-25 14:10:32.289 [Thread-12] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:10:32.289 [Thread-12] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-05-25 14:10:32.292 [Thread-12] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-05-25 14:10:32.294 [Thread-12] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-05-25 14:22:08.047 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 78871 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-05-25 14:22:08.051 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-05-25 14:22:08.134 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@623a8092: startup date [Fri May 25 14:22:08 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:22:09.229 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10544d8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-05-25 14:22:09.466 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-05-25 14:22:09.477 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:22:09.485 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-05-25 14:22:09.485 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-05-25 14:22:09.489 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-05-25 14:22:09.592 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-05-25 14:22:09.592 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1461 ms
+[INFO ] 2018-05-25 14:22:09.750 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-05-25 14:22:09.751 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-05-25 14:22:09.754 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-05-25 14:22:09.754 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-05-25 14:22:09.755 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-05-25 14:22:09.755 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-05-25 14:22:09.910 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-05-25 14:22:10.039 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-05-25 14:22:10.078 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:22:10.134 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-05-25 14:22:10.135 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-05-25 14:22:10.165 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-05-25 14:22:10.241 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-05-25 14:22:10.591 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3730f716'
+[INFO ] 2018-05-25 14:22:10.594 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:22:10.853 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-05-25 14:22:11.220 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-05-25 14:22:11.274 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-05-25 14:22:11.275 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-05-25 14:22:11.275 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-05-25 14:22:11.276 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-05-25 14:22:11.276 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-05-25 14:22:11.277 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:22:11.281 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-05-25 14:22:11.282 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-05-25 14:22:11.282 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-05-25 14:22:11.285 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:22:11.285 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-05-25 14:22:11.452 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:22:11.626 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@623a8092: startup date [Fri May 25 14:22:08 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:22:11.671 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:22:11.671 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:22:12.025 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-05-25 14:22:12.028 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-05-25 14:22:12.035 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-05-25 14:22:12.040 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-05-25 14:22:12.040 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-05-25 14:22:12.055 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-05-25 14:22:12.069 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-05-25 14:22:12.391 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:22:12.406 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-05-25 14:22:12.416 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-05-25 14:22:12.419 [main] DemoApplication - Started DemoApplication in 4.831 seconds (JVM running for 5.616)
+[INFO ] 2018-05-25 14:22:53.616 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-05-25 14:22:53.616 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-05-25 14:22:53.634 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[INFO ] 2018-05-25 14:26:46.122 [http-nio-8080-exec-7] DemoApplication - Create Received ItemItem{name='null', details='null'}
+[INFO ] 2018-05-25 14:29:22.716 [Thread-13] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@623a8092: startup date [Fri May 25 14:22:08 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:29:22.720 [Thread-13] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-05-25 14:29:22.721 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-05-25 14:29:22.721 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-05-25 14:29:22.724 [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:29:22.724 [Thread-13] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-05-25 14:29:22.727 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-05-25 14:29:22.728 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-05-25 14:29:26.330 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 78937 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-05-25 14:29:26.333 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-05-25 14:29:26.431 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17a7f733: startup date [Fri May 25 14:29:26 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:29:27.610 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c9067359] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-05-25 14:29:27.844 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-05-25 14:29:27.858 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:29:27.866 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-05-25 14:29:27.867 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-05-25 14:29:27.871 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-05-25 14:29:27.978 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-05-25 14:29:27.978 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1550 ms
+[INFO ] 2018-05-25 14:29:28.136 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-05-25 14:29:28.137 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-05-25 14:29:28.140 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-05-25 14:29:28.141 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-05-25 14:29:28.141 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-05-25 14:29:28.141 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-05-25 14:29:28.291 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-05-25 14:29:28.417 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-05-25 14:29:28.457 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:29:28.515 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-05-25 14:29:28.516 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-05-25 14:29:28.545 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-05-25 14:29:28.630 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-05-25 14:29:29.011 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@15a3b42'
+[INFO ] 2018-05-25 14:29:29.014 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:29:29.270 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-05-25 14:29:29.643 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-05-25 14:29:29.697 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-05-25 14:29:29.698 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-05-25 14:29:29.698 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-05-25 14:29:29.698 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-05-25 14:29:29.698 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-05-25 14:29:29.700 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:29:29.703 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-05-25 14:29:29.703 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-05-25 14:29:29.704 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-05-25 14:29:29.707 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:29:29.707 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-05-25 14:29:29.876 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:29:30.048 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17a7f733: startup date [Fri May 25 14:29:26 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:29:30.091 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:29:30.091 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:29:30.465 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-05-25 14:29:30.467 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-05-25 14:29:30.474 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-05-25 14:29:30.478 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-05-25 14:29:30.478 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-05-25 14:29:30.490 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-05-25 14:29:30.501 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-05-25 14:29:30.578 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:29:30.593 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-05-25 14:29:30.603 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-05-25 14:29:30.607 [main] DemoApplication - Started DemoApplication in 4.713 seconds (JVM running for 5.531)
+[INFO ] 2018-05-25 14:31:41.371 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-05-25 14:31:41.371 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-05-25 14:31:41.393 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+[INFO ] 2018-05-25 14:32:23.031 [Thread-13] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17a7f733: startup date [Fri May 25 14:29:26 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:32:23.033 [Thread-13] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-05-25 14:32:23.034 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-05-25 14:32:23.035 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-05-25 14:32:23.037 [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:32:23.038 [Thread-13] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-05-25 14:32:23.041 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-05-25 14:32:23.043 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-05-25 14:32:27.366 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 78956 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-05-25 14:32:27.373 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-05-25 14:32:27.472 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31f9b85e: startup date [Fri May 25 14:32:27 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:32:28.720 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49e77b91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-05-25 14:32:28.972 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-05-25 14:32:28.983 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:32:28.990 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-05-25 14:32:28.991 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-05-25 14:32:28.995 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-05-25 14:32:29.108 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-05-25 14:32:29.108 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1641 ms
+[INFO ] 2018-05-25 14:32:29.261 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-05-25 14:32:29.262 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-05-25 14:32:29.265 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-05-25 14:32:29.266 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-05-25 14:32:29.266 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-05-25 14:32:29.266 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-05-25 14:32:29.392 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-05-25 14:32:29.528 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-05-25 14:32:29.570 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:32:29.632 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-05-25 14:32:29.633 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-05-25 14:32:29.668 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-05-25 14:32:29.758 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-05-25 14:32:30.130 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@59fc6d05'
+[INFO ] 2018-05-25 14:32:30.132 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:32:30.430 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-05-25 14:32:30.846 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-05-25 14:32:30.903 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-05-25 14:32:30.903 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-05-25 14:32:30.904 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-05-25 14:32:30.904 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-05-25 14:32:30.904 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-05-25 14:32:30.905 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:32:30.909 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-05-25 14:32:30.909 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-05-25 14:32:30.910 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-05-25 14:32:30.912 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:32:30.913 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-05-25 14:32:31.072 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:32:31.233 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31f9b85e: startup date [Fri May 25 14:32:27 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:32:31.275 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:32:31.275 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:32:31.551 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-05-25 14:32:31.553 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-05-25 14:32:31.559 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-05-25 14:32:31.563 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-05-25 14:32:31.564 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-05-25 14:32:31.578 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-05-25 14:32:31.589 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-05-25 14:32:31.676 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:32:31.692 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-05-25 14:32:31.703 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-05-25 14:32:31.707 [main] DemoApplication - Started DemoApplication in 4.847 seconds (JVM running for 5.813)
+[INFO ] 2018-05-25 14:35:03.112 [Thread-14] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31f9b85e: startup date [Fri May 25 14:32:27 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:35:03.115 [Thread-14] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-05-25 14:35:03.116 [Thread-14] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-05-25 14:35:03.117 [Thread-14] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-05-25 14:35:03.120 [Thread-14] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:35:03.121 [Thread-14] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-05-25 14:35:03.124 [Thread-14] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-05-25 14:35:03.126 [Thread-14] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-05-25 14:35:08.185 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 78986 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-05-25 14:35:08.193 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-05-25 14:35:08.312 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68267da0: startup date [Fri May 25 14:35:08 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:35:09.436 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22823114] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-05-25 14:35:09.689 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-05-25 14:35:09.700 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:35:09.707 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-05-25 14:35:09.707 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-05-25 14:35:09.711 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-05-25 14:35:09.822 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-05-25 14:35:09.822 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1514 ms
+[INFO ] 2018-05-25 14:35:09.984 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-05-25 14:35:09.985 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-05-25 14:35:09.988 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-05-25 14:35:09.988 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-05-25 14:35:09.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-05-25 14:35:09.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-05-25 14:35:10.119 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-05-25 14:35:10.274 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-05-25 14:35:10.313 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:35:10.371 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-05-25 14:35:10.373 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-05-25 14:35:10.403 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-05-25 14:35:10.496 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-05-25 14:35:10.871 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@66f5a02e'
+[INFO ] 2018-05-25 14:35:10.873 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:35:11.165 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-05-25 14:35:11.556 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-05-25 14:35:11.617 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-05-25 14:35:11.617 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-05-25 14:35:11.618 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-05-25 14:35:11.618 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-05-25 14:35:11.618 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-05-25 14:35:11.619 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:35:11.623 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-05-25 14:35:11.624 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-05-25 14:35:11.625 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-05-25 14:35:11.629 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:35:11.629 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-05-25 14:35:11.780 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:35:11.928 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68267da0: startup date [Fri May 25 14:35:08 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:35:11.976 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:35:11.976 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:35:12.281 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-05-25 14:35:12.284 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-05-25 14:35:12.292 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-05-25 14:35:12.296 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-05-25 14:35:12.296 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-05-25 14:35:12.309 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-05-25 14:35:12.320 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-05-25 14:35:12.405 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:35:12.421 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-05-25 14:35:12.433 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-05-25 14:35:12.440 [main] DemoApplication - Started DemoApplication in 4.745 seconds (JVM running for 5.647)
+[INFO ] 2018-05-25 14:37:56.008 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-05-25 14:37:56.009 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-05-25 14:37:56.031 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+[INFO ] 2018-05-25 14:39:25.192 [Thread-14] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68267da0: startup date [Fri May 25 14:35:08 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:39:25.194 [Thread-14] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-05-25 14:39:25.195 [Thread-14] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-05-25 14:39:25.195 [Thread-14] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-05-25 14:39:25.198 [Thread-14] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:39:25.198 [Thread-14] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-05-25 14:39:25.201 [Thread-14] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-05-25 14:39:25.203 [Thread-14] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-05-25 14:39:28.753 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 79011 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-05-25 14:39:28.756 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-05-25 14:39:28.842 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@762ef0ea: startup date [Fri May 25 14:39:28 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:39:29.909 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75a0cc42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-05-25 14:39:30.135 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-05-25 14:39:30.147 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:39:30.155 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-05-25 14:39:30.156 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-05-25 14:39:30.160 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-05-25 14:39:30.260 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-05-25 14:39:30.260 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1421 ms
+[INFO ] 2018-05-25 14:39:30.413 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-05-25 14:39:30.414 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-05-25 14:39:30.417 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-05-25 14:39:30.417 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-05-25 14:39:30.417 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-05-25 14:39:30.417 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-05-25 14:39:30.560 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-05-25 14:39:30.684 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-05-25 14:39:30.722 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:39:30.778 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-05-25 14:39:30.779 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-05-25 14:39:30.806 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-05-25 14:39:30.881 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-05-25 14:39:31.225 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@47b269c4'
+[INFO ] 2018-05-25 14:39:31.227 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:39:31.480 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-05-25 14:39:31.812 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-05-25 14:39:31.863 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-05-25 14:39:31.864 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-05-25 14:39:31.864 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-05-25 14:39:31.864 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-05-25 14:39:31.865 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-05-25 14:39:31.866 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:39:31.869 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-05-25 14:39:31.870 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-05-25 14:39:31.870 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-05-25 14:39:31.873 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:39:31.873 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-05-25 14:39:32.034 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:39:32.205 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@762ef0ea: startup date [Fri May 25 14:39:28 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:39:32.246 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:39:32.246 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:39:32.570 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-05-25 14:39:32.572 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-05-25 14:39:32.579 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-05-25 14:39:32.583 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-05-25 14:39:32.583 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-05-25 14:39:32.597 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-05-25 14:39:32.609 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-05-25 14:39:32.849 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:39:32.865 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-05-25 14:39:32.875 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-05-25 14:39:32.879 [main] DemoApplication - Started DemoApplication in 4.52 seconds (JVM running for 5.231)
+[INFO ] 2018-05-25 14:39:35.723 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-05-25 14:39:35.723 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-05-25 14:39:35.742 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+[INFO ] 2018-05-25 14:40:20.178 [Thread-13] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@762ef0ea: startup date [Fri May 25 14:39:28 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:40:20.180 [Thread-13] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-05-25 14:40:20.181 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-05-25 14:40:20.182 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-05-25 14:40:20.184 [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:40:20.184 [Thread-13] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-05-25 14:40:20.187 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-05-25 14:40:20.189 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-05-25 14:46:12.339 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 79166 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-05-25 14:46:12.342 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-05-25 14:46:12.429 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3af9c5b7: startup date [Fri May 25 14:46:12 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:46:13.475 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e592d7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-05-25 14:46:13.703 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-05-25 14:46:13.714 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:46:13.722 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-05-25 14:46:13.723 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-05-25 14:46:13.727 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-05-25 14:46:13.829 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-05-25 14:46:13.829 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1404 ms
+[INFO ] 2018-05-25 14:46:13.984 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-05-25 14:46:13.986 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-05-25 14:46:13.988 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-05-25 14:46:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-05-25 14:46:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-05-25 14:46:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-05-25 14:46:14.144 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-05-25 14:46:14.270 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-05-25 14:46:14.307 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:46:14.362 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-05-25 14:46:14.363 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-05-25 14:46:14.390 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-05-25 14:46:14.467 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-05-25 14:46:14.803 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1f9d4b0e'
+[INFO ] 2018-05-25 14:46:14.806 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:46:15.054 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-05-25 14:46:15.388 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-05-25 14:46:15.439 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-05-25 14:46:15.440 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-05-25 14:46:15.440 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-05-25 14:46:15.441 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-05-25 14:46:15.441 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-05-25 14:46:15.442 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:46:15.445 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-05-25 14:46:15.446 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-05-25 14:46:15.446 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-05-25 14:46:15.449 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-05-25 14:46:15.449 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-05-25 14:46:15.606 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:46:15.774 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3af9c5b7: startup date [Fri May 25 14:46:12 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:46:15.815 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:46:15.815 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-05-25 14:46:16.133 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-05-25 14:46:16.136 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-05-25 14:46:16.145 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-05-25 14:46:16.149 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-05-25 14:46:16.149 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-05-25 14:46:16.163 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-05-25 14:46:16.175 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-05-25 14:46:16.410 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-05-25 14:46:16.425 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-05-25 14:46:16.435 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-05-25 14:46:16.438 [main] DemoApplication - Started DemoApplication in 4.499 seconds (JVM running for 5.207)
+[INFO ] 2018-05-25 14:46:29.308 [http-nio-8080-exec-2] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-05-25 14:46:29.308 [http-nio-8080-exec-2] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-05-25 14:46:29.326 [http-nio-8080-exec-2] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+[INFO ] 2018-05-25 14:46:29.377 [http-nio-8080-exec-2] DemoApplication - Create Received ItemItem{name='item1', details='This is item1'}
+[INFO ] 2018-05-25 14:46:38.574 [Thread-13] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3af9c5b7: startup date [Fri May 25 14:46:12 PDT 2018]; root of context hierarchy
+[INFO ] 2018-05-25 14:46:38.576 [Thread-13] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-05-25 14:46:38.577 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-05-25 14:46:38.578 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-05-25 14:46:38.580 [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-05-25 14:46:38.580 [Thread-13] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-05-25 14:46:38.583 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-05-25 14:46:38.585 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-07-03 15:20:34.646 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 46134 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-07-03 15:20:34.650 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-07-03 15:20:34.700 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a266d09: startup date [Tue Jul 03 15:20:34 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:20:36.017 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$10723560] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:20:36.098 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a067732] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:20:36.498 [main] TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[INFO ] 2018-07-03 15:20:36.515 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:20:36.525 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-07-03 15:20:36.525 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-07-03 15:20:36.531 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-07-03 15:20:36.653 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-07-03 15:20:36.653 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1958 ms
+[INFO ] 2018-07-03 15:20:36.791 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-07-03 15:20:36.792 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-07-03 15:20:36.795 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-07-03 15:20:36.795 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-07-03 15:20:36.795 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-07-03 15:20:36.795 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-07-03 15:20:36.944 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-07-03 15:20:37.144 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-07-03 15:20:37.193 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:20:37.290 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-07-03 15:20:37.291 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-07-03 15:20:37.341 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-07-03 15:20:37.471 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-07-03 15:20:37.962 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@778a1250'
+[INFO ] 2018-07-03 15:20:37.965 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:20:38.318 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-07-03 15:20:38.878 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-07-03 15:20:38.944 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-07-03 15:20:38.945 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-07-03 15:20:38.945 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-07-03 15:20:38.946 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-07-03 15:20:38.946 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-07-03 15:20:38.947 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:20:38.951 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-07-03 15:20:38.952 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-07-03 15:20:38.952 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-07-03 15:20:38.955 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:20:38.955 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-07-03 15:20:39.171 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:20:39.352 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a266d09: startup date [Tue Jul 03 15:20:34 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:20:39.408 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:20:39.409 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:20:39.814 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-07-03 15:20:39.818 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:20:39.826 [main] AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:20:39.830 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-07-03 15:20:39.832 [main] AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[INFO ] 2018-07-03 15:20:39.859 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-07-03 15:20:39.859 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-07-03 15:20:39.883 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-07-03 15:20:39.897 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-07-03 15:20:40.086 [container-1] CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[INFO ] 2018-07-03 15:20:40.118 [container-1] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4cc12db2:0/SimpleConnection@2711e363 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62800]
+[INFO ] 2018-07-03 15:20:40.123 [container-1] RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (my-frist-rabbit) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+[INFO ] 2018-07-03 15:20:40.328 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:20:40.347 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-07-03 15:20:40.360 [main] TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+[INFO ] 2018-07-03 15:20:40.364 [main] DemoApplication - Started DemoApplication in 6.321 seconds (JVM running for 7.482)
+[INFO ] 2018-07-03 15:24:00.338 [Thread-16] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a266d09: startup date [Tue Jul 03 15:20:34 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:24:00.510 [Thread-16] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-07-03 15:24:00.513 [Thread-16] SimpleMessageListenerContainer - Waiting for workers to finish.
+[INFO ] 2018-07-03 15:24:01.152 [Thread-16] SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[INFO ] 2018-07-03 15:24:01.153 [Thread-16] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-07-03 15:24:01.155 [Thread-16] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-07-03 15:24:01.156 [Thread-16] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-07-03 15:24:01.156 [Thread-16] SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+[INFO ] 2018-07-03 15:24:01.163 [Thread-16] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:24:01.163 [Thread-16] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-07-03 15:24:01.167 [Thread-16] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-07-03 15:24:01.169 [Thread-16] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-07-03 15:25:58.123 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 47610 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-07-03 15:25:58.128 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-07-03 15:25:58.225 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@313b2ea6: startup date [Tue Jul 03 15:25:58 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:25:59.416 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e915e68e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:25:59.494 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22aa2860] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:25:59.753 [main] TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[INFO ] 2018-07-03 15:25:59.764 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:25:59.772 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-07-03 15:25:59.773 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-07-03 15:25:59.777 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-07-03 15:25:59.878 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-07-03 15:25:59.878 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1657 ms
+[INFO ] 2018-07-03 15:26:00.009 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-07-03 15:26:00.010 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-07-03 15:26:00.013 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-07-03 15:26:00.013 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-07-03 15:26:00.013 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-07-03 15:26:00.013 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-07-03 15:26:00.134 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-07-03 15:26:00.276 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-07-03 15:26:00.316 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:26:00.377 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-07-03 15:26:00.379 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-07-03 15:26:00.411 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-07-03 15:26:00.506 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-07-03 15:26:00.867 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4d93f75b'
+[INFO ] 2018-07-03 15:26:00.870 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:26:01.128 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-07-03 15:26:01.576 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-07-03 15:26:01.629 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-07-03 15:26:01.630 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-07-03 15:26:01.630 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-07-03 15:26:01.630 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-07-03 15:26:01.630 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-07-03 15:26:01.631 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:26:01.634 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-07-03 15:26:01.635 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-07-03 15:26:01.635 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-07-03 15:26:01.638 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:26:01.638 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-07-03 15:26:01.812 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:26:01.957 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@313b2ea6: startup date [Tue Jul 03 15:25:58 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:26:02.013 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:26:02.013 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:26:02.422 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-07-03 15:26:02.425 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:26:02.433 [main] AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:26:02.438 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-07-03 15:26:02.440 [main] AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[INFO ] 2018-07-03 15:26:02.460 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-07-03 15:26:02.460 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-07-03 15:26:02.472 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-07-03 15:26:02.483 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-07-03 15:26:02.617 [container-1] CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[INFO ] 2018-07-03 15:26:02.643 [container-1] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#46468f0:0/SimpleConnection@522b1fa8 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64381]
+[INFO ] 2018-07-03 15:26:02.647 [container-1] RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (my-frist-rabbit) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+[INFO ] 2018-07-03 15:26:02.751 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:26:02.767 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-07-03 15:26:02.777 [main] TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+[INFO ] 2018-07-03 15:26:02.780 [main] DemoApplication - Started DemoApplication in 5.102 seconds (JVM running for 5.912)
+[INFO ] 2018-07-03 15:33:27.113 [Thread-14] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@313b2ea6: startup date [Tue Jul 03 15:25:58 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:33:27.116 [Thread-14] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-07-03 15:33:27.120 [Thread-14] SimpleMessageListenerContainer - Waiting for workers to finish.
+[INFO ] 2018-07-03 15:33:27.517 [Thread-14] SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[INFO ] 2018-07-03 15:33:27.518 [Thread-14] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-07-03 15:33:27.521 [Thread-14] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-07-03 15:33:27.521 [Thread-14] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-07-03 15:33:27.522 [Thread-14] SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+[INFO ] 2018-07-03 15:33:27.531 [Thread-14] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:33:27.531 [Thread-14] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-07-03 15:33:27.535 [Thread-14] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-07-03 15:33:27.537 [Thread-14] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-07-03 15:33:32.269 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 49768 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-07-03 15:33:32.275 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-07-03 15:33:32.400 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@117e949d: startup date [Tue Jul 03 15:33:32 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:33:34.057 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f09a5581] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:33:34.146 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a2e9753] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:33:34.441 [main] TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[INFO ] 2018-07-03 15:33:34.451 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:33:34.458 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-07-03 15:33:34.459 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-07-03 15:33:34.463 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-07-03 15:33:34.547 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-07-03 15:33:34.547 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2157 ms
+[INFO ] 2018-07-03 15:33:34.684 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-07-03 15:33:34.685 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-07-03 15:33:34.688 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-07-03 15:33:34.688 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-07-03 15:33:34.689 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-07-03 15:33:34.689 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-07-03 15:33:34.829 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-07-03 15:33:35.015 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-07-03 15:33:35.070 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:33:35.143 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-07-03 15:33:35.144 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-07-03 15:33:35.177 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-07-03 15:33:35.273 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-07-03 15:33:35.683 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@65c5bf0e'
+[INFO ] 2018-07-03 15:33:35.686 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:33:35.993 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-07-03 15:33:36.458 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-07-03 15:33:36.517 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-07-03 15:33:36.518 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-07-03 15:33:36.518 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-07-03 15:33:36.518 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-07-03 15:33:36.519 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-07-03 15:33:36.519 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:33:36.523 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-07-03 15:33:36.523 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-07-03 15:33:36.524 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-07-03 15:33:36.527 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:33:36.527 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-07-03 15:33:36.725 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:33:36.957 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@117e949d: startup date [Tue Jul 03 15:33:32 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:33:37.027 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:33:37.027 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:33:37.494 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-07-03 15:33:37.498 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:33:37.508 [main] AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:33:37.513 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-07-03 15:33:37.515 [main] AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[INFO ] 2018-07-03 15:33:37.541 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-07-03 15:33:37.541 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-07-03 15:33:37.559 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-07-03 15:33:37.572 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-07-03 15:33:37.762 [container-1] CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[INFO ] 2018-07-03 15:33:37.797 [container-1] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5939e24:0/SimpleConnection@351bb0ca [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50108]
+[INFO ] 2018-07-03 15:33:37.804 [container-1] RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (my-frist-rabbit) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+[INFO ] 2018-07-03 15:33:47.938 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:33:47.955 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-07-03 15:33:47.965 [main] TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+[INFO ] 2018-07-03 15:33:47.969 [main] DemoApplication - Started DemoApplication in 16.227 seconds (JVM running for 17.2)
+[INFO ] 2018-07-03 15:34:11.221 [Thread-36] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@117e949d: startup date [Tue Jul 03 15:33:32 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:34:11.224 [Thread-36] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-07-03 15:34:11.228 [Thread-36] SimpleMessageListenerContainer - Waiting for workers to finish.
+[INFO ] 2018-07-03 15:34:12.078 [Thread-36] SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[INFO ] 2018-07-03 15:34:12.078 [Thread-36] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-07-03 15:34:12.083 [Thread-36] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-07-03 15:34:12.083 [Thread-36] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-07-03 15:34:12.084 [Thread-36] SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+[INFO ] 2018-07-03 15:34:12.092 [Thread-36] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:34:12.092 [Thread-36] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-07-03 15:34:12.096 [Thread-36] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-07-03 15:34:12.098 [Thread-36] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2018-07-03 15:42:35.182 [main] DemoApplication - Starting DemoApplication on sea-hea-m.ds.ad.adp.com with PID 52240 (/Users/hea/Desktop/DEV/RestSwagger/target/classes started by hea in /Users/hea/Desktop/DEV/RestSwagger)
+[INFO ] 2018-07-03 15:42:35.185 [main] DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-07-03 15:42:35.272 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dac5ef: startup date [Tue Jul 03 15:42:35 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:42:36.417 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$39b2d753] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:42:36.488 [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73471925] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-07-03 15:42:36.737 [main] TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[INFO ] 2018-07-03 15:42:36.747 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:42:36.755 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2018-07-03 15:42:36.756 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-07-03 15:42:36.760 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-07-03 15:42:36.867 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-07-03 15:42:36.867 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1599 ms
+[INFO ] 2018-07-03 15:42:37.005 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-07-03 15:42:37.006 [localhost-startStop-1] ServletRegistrationBean - Servlet webServlet mapped to [/console/*]
+[INFO ] 2018-07-03 15:42:37.009 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-07-03 15:42:37.009 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-07-03 15:42:37.009 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-07-03 15:42:37.010 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-07-03 15:42:37.140 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2018-07-03 15:42:37.281 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2018-07-03 15:42:37.321 [main] LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:42:37.379 [main] Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-07-03 15:42:37.380 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-07-03 15:42:37.413 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-07-03 15:42:37.499 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2018-07-03 15:42:37.878 [main] SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@68b11545'
+[INFO ] 2018-07-03 15:42:37.881 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:42:38.155 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[WARN ] 2018-07-03 15:42:38.624 [main] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2018-07-03 15:42:38.679 [main] RequestMappingHandlerMapping - Mapped "{[/items/update],methods=[PUT],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.update(java.lang.String)
+[INFO ] 2018-07-03 15:42:38.680 [main] RequestMappingHandlerMapping - Mapped "{[/items/delete],methods=[DELETE],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.delete(java.lang.String)
+[INFO ] 2018-07-03 15:42:38.680 [main] RequestMappingHandlerMapping - Mapped "{[/items/create],methods=[POST],consumes=[application/json;charset=utf-8]}" onto public void com.example.demo.controller.ItemController.create(com.example.demo.entity.Item)
+[INFO ] 2018-07-03 15:42:38.680 [main] RequestMappingHandlerMapping - Mapped "{[/items/item/{id}],methods=[GET]}" onto public com.example.demo.entity.Item com.example.demo.controller.ItemController.getById(java.lang.Integer)
+[INFO ] 2018-07-03 15:42:38.681 [main] RequestMappingHandlerMapping - Mapped "{[/items/all],methods=[GET]}" onto public java.util.List<com.example.demo.entity.Item> com.example.demo.controller.ItemController.getAll()
+[INFO ] 2018-07-03 15:42:38.681 [main] RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:42:38.685 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-07-03 15:42:38.686 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-07-03 15:42:38.686 [main] RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-07-03 15:42:38.689 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-07-03 15:42:38.689 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-07-03 15:42:38.869 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:42:39.017 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dac5ef: startup date [Tue Jul 03 15:42:35 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:42:39.061 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:42:39.061 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-07-03 15:42:39.386 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-07-03 15:42:39.389 [main] AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:42:39.398 [main] AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[INFO ] 2018-07-03 15:42:39.403 [main] AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2018-07-03 15:42:39.405 [main] AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[INFO ] 2018-07-03 15:42:39.430 [main] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-07-03 15:42:39.431 [main] DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-07-03 15:42:39.448 [main] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-07-03 15:42:39.462 [main] ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-07-03 15:42:39.625 [container-1] CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[INFO ] 2018-07-03 15:42:39.654 [container-1] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#73e4387:0/SimpleConnection@36d32d0a [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52540]
+[INFO ] 2018-07-03 15:42:39.659 [container-1] RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (my-frist-rabbit) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+[INFO ] 2018-07-03 15:42:39.769 [main] DemoApplication - Send Hello
+[INFO ] 2018-07-03 15:42:39.779 [container-1] DemoApplication - Received <Hello from RabbitMQ!>
+[INFO ] 2018-07-03 15:42:39.782 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] 2018-07-03 15:42:39.798 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-07-03 15:42:39.832 [main] TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+[INFO ] 2018-07-03 15:42:39.836 [main] DemoApplication - Started DemoApplication in 5.122 seconds (JVM running for 6.06)
+[INFO ] 2018-07-03 15:48:28.199 [Thread-13] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1dac5ef: startup date [Tue Jul 03 15:42:35 PDT 2018]; root of context hierarchy
+[INFO ] 2018-07-03 15:48:28.203 [Thread-13] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2018-07-03 15:48:28.206 [Thread-13] SimpleMessageListenerContainer - Waiting for workers to finish.
+[INFO ] 2018-07-03 15:48:29.181 [Thread-13] SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[INFO ] 2018-07-03 15:48:29.181 [Thread-13] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-07-03 15:48:29.184 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-07-03 15:48:29.184 [Thread-13] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2018-07-03 15:48:29.185 [Thread-13] SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+[INFO ] 2018-07-03 15:48:29.193 [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2018-07-03 15:48:29.193 [Thread-13] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+[INFO ] 2018-07-03 15:48:29.363 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2018-07-03 15:48:29.365 [Thread-13] HikariDataSource - HikariPool-1 - Shutdown completed.
