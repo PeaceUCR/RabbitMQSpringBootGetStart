@@ -5,7 +5,7 @@ RabbitMQ
 
 install and start the server https://www.rabbitmq.com/install-homebrew.html
 
-Start the server with command rabbitmq-server
+Start the server with command 'rabbitmq-server'
 Then http://localhost:15672 With guest/guest
 
 Or add user https://stackoverflow.com/questions/23669780/rabbitmq-3-3-1-can-not-login-with-guest-guest
